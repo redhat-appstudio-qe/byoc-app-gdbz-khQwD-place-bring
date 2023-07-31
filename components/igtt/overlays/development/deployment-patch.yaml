@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: igtt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-wzgy-tenant/byoc-app-gdbz/igtt@sha256:d1eb6a5a1372456e08a8d8cd3d99a2a62cc6d68b19017b29cd21538768218a1d
+        name: my-java-quarkus
+        resources: {}
+status: {}
